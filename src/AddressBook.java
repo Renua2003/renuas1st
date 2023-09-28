@@ -8,11 +8,17 @@ public class AddressBook {
     }
 
     public void addBuddy(BuddyInfo var){
-        addresholder.add(var);
+        if(var != null){
+        addresholder.add(var);}
     }
 
-    public void removeBuddy(BuddyInfo var){
-        addresholder.remove(var);
+    public BuddyInfo removeBuddy(int index){
+        if(index >= 0 && index < addresholder.size()) {
+            return addresholder.remove(index);
+        }
+        return null;
+
+
 
     }
 
@@ -27,7 +33,7 @@ public class AddressBook {
        BuddyInfo buddy2 = new BuddyInfo("Tunde","happines lane ","2");
        address1.addBuddy(buddy2);
        address1.addBuddy(buddy1);
-
+       address1.removeBuddy(1);
 
 
 

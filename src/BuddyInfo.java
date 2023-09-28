@@ -36,7 +36,7 @@ public class BuddyInfo {
     public static void main(String[] args) {
         System.out.println("Hello World.!");
 
-        int c =9;
+        int c =10;
         int t= 7;
 
 
